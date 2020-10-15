@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link href="style/login.css" rel="stylesheet" type="text/css"/>
+  <link href="style/logo-and-nav.css" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+</head>
+<body>
+  <div class="wrapper">
+    <section class="header">
+      <div class="logo">
+        <img src="images/logo.png" alt="logo">
+      </div>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact-us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li class="current"><a href="login.html">Login</a></li>
+        <button><a href="register.html">Register</a></button>
+      </ul>
+    </section>
+
+    <fieldset class="login">
+      <div class="title">
+        <h1>Login</h1>
+      </div>
+      <form action="https://formspree.io/f/{form_id}" method="post">
+        <div class="textfield">
+              
+          <p><label for="email">Username:<abbr title="requried" aria-label="required">*</abbr></label>
+            <input type="text" name="email" placeholder="Your email address"></p>
+
+          <p><label for="password">Password:<abbr title="requried" aria-label="required">*</abbr></label>
+            <input type="password" name="password" placeholder="Your password"></p>
+              
+          <button type="submit">Submit</button>
+          <div class="link">
+            <p>Don't have an account? Click <a href="register.html">here</a> to register!</p>
+          </div>
+        </div>
+      </form>
+    </fieldset>
+    <div class="push"></div>
+  </div>
+  <footer class="footer">
+    <hr>
+    <i class="far fa-copyright"></i>
+    Ariel 2020
+  </footer>
+</body>
+</html>

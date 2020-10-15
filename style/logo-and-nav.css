@@ -1,0 +1,83 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.logo{
+  position: absolute;;
+  left:8px;
+  top:8px; 
+}
+
+.logo img{
+  width: 20rem;
+}
+
+.nav{
+  position: absolute;
+  right:5px;
+  top:5px; 
+  font-family: 'Lobster', cursive;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+  padding-right: 1rem;
+}
+
+.nav a{
+  color: rgb(255, 123, 0);
+  text-decoration:none;
+}
+
+.nav a:active{
+  color: hsl(56, 89%, 76%);
+}
+
+.nav a:hover{
+  background-color:#85eaee7e;
+}
+
+.nav .current {
+  background-color: hsla(0, 13%, 86%, 0.486);
+}
+
+.nav button{
+  font-size: 1rem;
+  font-family: Optima, sans-serif;
+  background-color:rgba(245, 206, 183, 0.993);
+  border: solid 0.1rem rgba(245, 206, 183, 0.993);
+  border-radius: 10%;
+  outline: none;
+}
+
+.nav button:hover{
+  color: rgb(255, 123, 0);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  /* shadow from https://www.w3schools.com/css/css3_buttons.asp */
+}
+
+.wrapper{
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+
+.footer{
+  text-align: center;
+}
+
+.footer,
+.push {
+  height: 50px;
+}
+
+/* make the nav and logo looks good on mobile*/
+@media (max-width: 600px) {
+  .nav{
+    margin-top: 4rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+  }
+}

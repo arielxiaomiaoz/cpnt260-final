@@ -1,0 +1,50 @@
+.header{
+  height: 20vh;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.cakephotos{
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: repeat(3, 50vmin);
+  grid-auto-rows: 50vmin;
+  grid-gap: 1rem;
+}
+
+.cakephotos li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  flex-grow: 1;
+}
+
+.cakephotos img{
+  width: 20rem;
+  height: 17rem;
+}
+
+.cakephotos img:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  /* shadow element from https://www.w3schools.com/css/css3_buttons.asp */
+}
+
+figcaption{
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .cakephotos {
+      grid-template-columns: 1fr;
+  }
+  .cake9{
+    padding-bottom: 5rem;
+  }
+}
