@@ -1,5 +1,5 @@
 .header{
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(/images/background.jpg);
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(https://github.com/arielxiaomiaoz/cpnt260-final/blob/master/images/background.jpg?raw=true);
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
